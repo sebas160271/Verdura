@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Gran Verdura — Verduras frescas</title>
+  <meta name="description" content="Venta de verduras frescas: ají, ajo, papa, cebolla y tomate." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="logo.svg" alt="La Gran Verdura logo" width="52" height="52">
+        </div>
+        <div>
+          <div class="brand-title">La Gran Verdura</div>
+          <div class="brand-sub">Verduras frescas — ají, ajo, papa, cebolla, tomate</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contacto">Hacer pedido</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Verduras frescas, directo del campo a tu mesa</h1>
+        <p class="lead">Seleccionamos las mejores cosechas de ají, ajo, papa, cebolla y tomate.</p>
+        <div class="features">
+          <div class="chip">🍅 Calidad garantizada</div>
+          <div class="chip">🚚 Entrega rápida</div>
+          <div class="chip">🌱 Productos naturales</div>
+        </div>
+
+        <div class="products" id="productos">
+          <div class="product" data-name="Tomate" data-price="3500">
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=800&auto=format&fit=crop" alt="Tomate">
+            <div class="info"><strong>Tomate</strong><div class="price">$3.500 / kg</div></div>
+            <button class="add">Agregar</button>
+          </div>
+          <div class="product" data-name="Cebolla" data-price="2800">
+            <img src="https://images.unsplash.com/photo-1518976024611-4b54b4b1b7fb?q=80&w=800&auto=format&fit=crop" alt="Cebolla">
+            <div class="info"><strong>Cebolla</strong><div class="price">$2.800 / kg</div></div>
+            <button class="add">Agregar</button>
+          </div>
+          <div class="product" data-name="Papa" data-price="1800">
+            <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=800&auto=format&fit=crop" alt="Papa">
+            <div class="info"><strong>Papa</strong><div class="price">$1.800 / kg</div></div>
+            <button class="add">Agregar</button>
+          </div>
+          <div class="product" data-name="Ajo" data-price="5200">
+            <img src="https://images.unsplash.com/photo-1524594154906-3b0d6f8d8b59?q=80&w=800&auto=format&fit=crop" alt="Ajo">
+            <div class="info"><strong>Ajo</strong><div class="price">$5.200 / kg</div></div>
+            <button class="add">Agregar</button>
+          </div>
+          <div class="product" data-name="Ají" data-price="4200">
+            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop" alt="Ají">
+            <div class="info"><strong>Ají</strong><div class="price">$4.200 / kg</div></div>
+            <button class="add">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <h3>Carrito</h3>
+        <div id="cart-list"><p class="muted">Tu carrito está vacío.</p></div>
+        <div class="cart-footer"><strong>Total:</strong><div id="cart-total">$0</div></div>
+        <button id="checkout">Realizar pedido</button>
+      </aside>
+    </section>
+
+    <section id="nosotros" class="section">
+      <h2>Sobre La Gran Verdura</h2>
+      <p>Somos una empresa familiar dedicada a ofrecer verduras frescas y de calidad.</p>
+    </section>
+
+    <section id="contacto" class="section">
+      <h3>Contacto y pedidos</h3>
+      <form id="contact-form">
+        <input name="nombre" placeholder="Nombre" required>
+        <input name="telefono" placeholder="Teléfono / WhatsApp" required>
+        <textarea name="mensaje" placeholder="Pedido"></textarea>
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© La Gran Verdura - Todos los derechos reservados</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+          </html>
